@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  livekit-server:
+    image: livekit/livekit-server:latest
+    restart: unless-stopped
+    ports:
+      - "7880:7880"   # LiveKit API and WebSocket
+      - "7881:7881"   # LiveKit RTMP/WHIP/WHEP
+    environment:
+      - LIVEKIT_KEYS=APIwgQ5ZsqPjiUj:zcZY22KtJlddq6OAKplfm3McA8k7dzv7fw4mXna27fsB
+      - LIVEKIT_REDIS_URL=redis://redis:6379
+      - LIVEKIT_PG_URL=postgres://livekit:livekit@postgres/livekit?sslmode=disable
+    depends_on:
+      - redis
+      - postgres
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: livekit
+      POSTGRES_PASSWORD: livekit
+      POSTGRES_DB: livekit
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
