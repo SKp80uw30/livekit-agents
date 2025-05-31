@@ -1,0 +1,59 @@
+PODS:
+  - connectivity_plus (0.0.1):
+    - FlutterMacOS
+    - ReachabilitySwift
+  - device_info_plus (0.0.1):
+    - FlutterMacOS
+  - flutter_webrtc (0.9.36):
+    - FlutterMacOS
+    - WebRTC-SDK (= 114.5735.08)
+  - FlutterMacOS (1.0.0)
+  - livekit_client (1.5.6):
+    - FlutterMacOS
+    - WebRTC-SDK (= 114.5735.08)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - ReachabilitySwift (5.2.4)
+  - WebRTC-SDK (114.5735.08)
+
+DEPENDENCIES:
+  - connectivity_plus (from `Flutter/ephemeral/.symlinks/plugins/connectivity_plus/macos`)
+  - device_info_plus (from `Flutter/ephemeral/.symlinks/plugins/device_info_plus/macos`)
+  - flutter_webrtc (from `Flutter/ephemeral/.symlinks/plugins/flutter_webrtc/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - livekit_client (from `Flutter/ephemeral/.symlinks/plugins/livekit_client/macos`)
+  - path_provider_foundation (from `Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin`)
+
+SPEC REPOS:
+  trunk:
+    - ReachabilitySwift
+    - WebRTC-SDK
+
+EXTERNAL SOURCES:
+  connectivity_plus:
+    :path: Flutter/ephemeral/.symlinks/plugins/connectivity_plus/macos
+  device_info_plus:
+    :path: Flutter/ephemeral/.symlinks/plugins/device_info_plus/macos
+  flutter_webrtc:
+    :path: Flutter/ephemeral/.symlinks/plugins/flutter_webrtc/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  livekit_client:
+    :path: Flutter/ephemeral/.symlinks/plugins/livekit_client/macos
+  path_provider_foundation:
+    :path: Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin
+
+SPEC CHECKSUMS:
+  connectivity_plus: 18d3c32514c886e046de60e9c13895109866c747
+  device_info_plus: 1b14eed9bf95428983aed283a8d51cce3d8c4215
+  flutter_webrtc: cf7dc44d26cbb5c5f1ae5f583dab545871f287f9
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+  livekit_client: 741fe5ed70d6de06aed4e5d8423903e422b0ec18
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
+  WebRTC-SDK: c24d2a6c9f571f2ed42297cb8ffba9557093142b
+
+PODFILE CHECKSUM: 236401fc2c932af29a9fcf0e97baeeb2d750d367
+
+COCOAPODS: 1.15.2
